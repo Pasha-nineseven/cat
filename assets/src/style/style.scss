@@ -1,0 +1,82 @@
+// @font-face {
+//     font-family: 'tt_normsregular';
+//     src: url('../fonts/ttnorms/ttnorms-regular/ttnorms-regular.eot');
+//     src: url('../fonts/ttnorms/ttnorms-regular/ttnorms-regular.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/ttnorms/ttnorms-regular/ttnorms-regular.woff2') format('woff2'),
+//          url('../fonts/ttnorms/ttnorms-regular/ttnorms-regular.woff') format('woff'),
+//          url('../fonts/ttnorms/ttnorms-regular/ttnorms-regular.ttf') format('truetype'),
+//          url('../fonts/ttnorms/ttnorms-regular/ttnorms-regular.svg#tt_normsregular') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'tt_normsbold';
+//     src: url('../fonts/ttnorms/ttnorms-bold/ttnorms-bold.eot');
+//     src: url('../fonts/ttnorms/ttnorms-bold/ttnorms-bold.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/ttnorms/ttnorms-bold/ttnorms-bold.woff2') format('woff2'),
+//          url('../fonts/ttnorms/ttnorms-bold/ttnorms-bold.woff') format('woff'),
+//          url('../fonts/ttnorms/ttnorms-bold/ttnorms-bold.ttf') format('truetype'),
+//          url('../fonts/ttnorms/ttnorms-bold/ttnorms-bold.svg#tt_normsbold') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+
+
+ymaps[class$="-copyright"] {
+    display: none;
+}
+
+.layout{
+  	flex: 1 0 auto;
+}
+
+
+.page-wrapper{
+	display: flex;
+}
+.page-aside{
+	min-width: 375px;
+	width: 375px;
+	margin-right: 45px;
+}
+.page-inner{
+	flex:1;
+}
+
+.container-fluid{
+	width: 100%;
+	max-width: 1220px;
+    padding: 0 20px;
+	position: relative;
+	margin: 0 auto;
+}
+
+
+.page-content{
+	//padding: 20px 0;
+}
+
+.breadcrumbs{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 60px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #DA6803;
+}
+
+a.breadcrumbs__item{
+	color: #333333;
+	font-weight: 300;
+	&:after{
+		content: "/";
+		margin: 0 5px;
+	}
+}
+
+.page-title{
+	border-bottom: 1px solid #BDBDBD;
+	margin-bottom: 80px;
+	position: relative;
+}
