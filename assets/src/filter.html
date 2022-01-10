@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+		//= template/header.html
+		<main class="page-content workarea">
+			<div class="container-fluid">
+				<div class="breadcrumbs">
+					<a href="#" class="breadcrumbs__item">Главная</a>
+					<span class="breadcrumbs__item">Подбор техники </span>
+				</div>
+				<div class="page-wrapper">
+					<div class="page-inner">
+						<div class="page-title">
+							<h1>Подбор техники</h1>
+						</div>
+						<!-- PAGE-CONTENT -->
+						<div class="p-filter">
+                            <div class="p-filter__in">
+								<form action="#" method="post">
+									<div class="p-filter__wrap">
+										<div class="p-filter__item">
+											<div class="p-filter-horizontal">
+												<div class="p-filter__title">
+													Тип техники
+												</div>
+												<div class="checkbox-item">
+													<input type="checkbox" id="ch1" name="p-filter-hor">
+													<label for="ch1">
+														Прицепы
+													</label>
+												</div>
+												<div class="checkbox-item">
+													<input type="checkbox" id="ch2" name="p-filter-hor">
+													<label for="ch2">
+														Полуприцепы
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="p-filter__item">
+											<div class="p-filter-united">
+												<div class="p-filter-slider">
+													<div class="p-filter-slider__item">
+														<div class="p-filter__title">
+															Грузоподъёмность, т
+														</div>
+														<div class="slider-count-slider js-slider-count-cargo"></div>
+													</div>
+													<div class="p-filter-slider__item">
+														<div class="p-filter__title">
+															Масса снаряжённого полуприцепа, т
+														</div>
+														<div class="slider-count-slider js-slider-count-weight"></div>
+													</div>
+													<div class="p-filter-slider__item">
+														<div class="p-filter__title">
+															Длина платформы, м
+														</div>
+														<div class="slider-count-slider js-slider-count-length"></div>
+													</div>
+												</div>
+												<div class="p-filter-united-view">
+													<div class="p-filter-united-view__item">
+														<div class="p-filter__title">Применение</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="ch-f1" name="p-filter-col">
+															<label for="ch-f1">
+																Для перевозки техники
+															</label>
+														</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="ch-f2" name="p-filter-col">
+															<label for="ch-f2">
+																Для перевозки неделимых грузов
+															</label>
+														</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="ch-f3" name="p-filter-col">
+															<label for="ch-f3">
+																Для перевозки труб
+															</label>
+														</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="ch-f4" name="p-filter-col">
+															<label for="ch-f4">
+																Для перевозки контейнеров
+															</label>
+														</div>
+													</div>
+													<div class="p-filter-united-view__item">
+														<div class="p-filter__title">Условия эксплуатации</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="ch-f5" name="p-filter-col">
+															<label for="ch-f5">
+																Шоссе
+															</label>
+														</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="ch-f6" name="p-filter-col">
+															<label for="ch-f6">
+																Город
+															</label>
+														</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="ch-f7" name="p-filter-col">
+															<label for="ch-f7">
+																Север
+															</label>
+														</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="ch-f8" name="p-filter-col">
+															<label for="ch-f8">
+																Смешанный
+															</label>
+														</div>
+													</div>
+													<div class="p-filter-united-view__item">
+														<div class="p-filter__title">Количество осей</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="ch-f9" name="p-filter-col">
+															<label for="ch-f9">
+																2
+															</label>
+														</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="ch-f10" name="p-filter-col">
+															<label for="ch-f10">
+																3
+															</label>
+														</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="ch-f11" name="p-filter-col">
+															<label for="ch-f11">
+																4
+															</label>
+														</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="ch-f12" name="p-filter-col">
+															<label for="ch-f12">
+																5
+															</label>
+														</div>
+													</div>
+													<div class="p-filter-united-view__item">
+														<div class="p-filter__title">Колёсная формула</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="ch-f13" name="p-filter-col">
+															<label for="ch-f13">
+																4х2
+															</label>
+														</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="ch-f14" name="p-filter-col">
+															<label for="ch-f14">
+																4х4
+															</label>
+														</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="ch-f15" name="p-filter-col">
+															<label for="ch-f15">
+																6х2
+															</label>
+														</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="ch-f16" name="p-filter-col">
+															<label for="ch-f16">
+																6х4
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="p-filter__item">
+											<div class="p-filter__title">
+												Доступные опции
+											</div>
+											<div class="p-filter-opt">
+									
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Осевые агрегаты
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch1" checked>
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Высота ССУ
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch2">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Шкворень
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch3">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Трап
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch4">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Уширитель платформы
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch5">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Ширина платформы 3 м
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch6">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Изменение длины платформы
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch7">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Раздвижка
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch8">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Коники
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch9">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Борта
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch10">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Тент
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch11">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Ошиновка
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch12">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Противооткатные упоры
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch13">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Отбойные брусья
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch14">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Планки противоскольжения
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch15">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Контейнерные замки
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch16">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Дополнительный топливный бак
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch17">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Электро лебедка
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch18">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Гидростанция
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch19">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Надставные борта
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch20">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Межколёсная блокировка
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch21">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Межосевая блокировк
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch22">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Северный пакет
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch23">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+												<div class="p-filter-opt__line">
+													<div class="p-filter-opt__txt">
+														Коробка отбора мощности
+													</div>
+													<div class="p-filter-opt__toggle">
+														<label class="switch">
+															<input type="checkbox" class="switch-input" name="opt-switch" id="check-switch24">
+															<span class="switch-label" data-on="Да" data-off="Нет"></span>
+															<span class="switch-handle"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="btn-wrap">
+										<a href="#" class="btn">Подобрать технику</a>
+									</div>
+								</form>
+                            </div>
+                        </div>
+						<!-- end PAGE-CONTENT -->
+					</div>
+				</div>
+			</div>
+			//= template/clients.html
+		</main>
+	</div><!-- END LAYOUT-->
+	//= template/footer.html
+
+	<!-- POPUP -->
+	<div id="call" class="popup dnone">
+		<div class="call-order">
+			<h3>Оставить заявку</h3>
+			<div class="call-order__form">
+				<form action="#" method="post">
+					<div class="call-order__wrap">
+						<div class="call-order__col">
+							<div class="input-item">
+								<div class="input-label">Ваше имя</div>
+								<div class="input-item__wrap m-positive">
+									<input type="text" value="Иван">
+								</div>
+							</div>
+							<div class="input-item">
+								<div class="input-label">Телефон*</div>
+								<div class="input-item__wrap m-negative">
+									<input type="tel" value="123456">
+								</div>
+							</div>
+							<div class="input-item">
+								<div class="input-label">Эл. почта*</div>
+								<div class="input-item__wrap">
+									<input type="email" placeholder="Эл. почта">
+								</div>
+							</div>
+						</div>
+						<div class="call-order__col">
+							<div class="input-item">
+								<div class="input-label">Прикрепить техническое задание</div>
+								<div class="input-item__wrap">
+									<div class="custom-file">
+										<input type="text" value="Файл" class="js-value">
+										<label for="custom-file-upload" class="filupp">
+											Добавить
+											<input type="file" name="attachment-file" value="1" id="custom-file-upload"/>
+										</label>
+									</div>
+									<!-- <input type="text" value="Файл"> -->
+								</div>
+							</div>
+							<div class="input-item">
+								<div class="input-label">Комментарий</div>
+								<textarea placeholder="Текст"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="checkbox-item">
+						<input type="checkbox" id="checkbox-agree1" name="checkbox" checked>
+						<label for="checkbox-agree1">
+							Я согласен с <a href="#">публичной офертой</a> и даю согласие на обработку <a href="#">персональных данных</a>
+						</label>
+					</div>
+					<div class="btn-wrap">
+						<input type="submit" value="Отправить заявку">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/libs/libs.min.js"></script>
+	<script src="js/interface.js"></script>
+	<script src="js/pages.js"></script>
+</body>
+</html>

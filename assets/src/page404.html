@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout m-404">
+		//= template/header.html
+		<main class="page-content workarea">
+			<div class="container-fluid">
+				<div class="page-wrapper">
+					<div class="page-inner">
+						<!-- PAGE-CONTENT -->
+						<div class="page404">
+                            <div class="container-fluid">
+                               <div class="page404__in">
+                                   <div class="page404-icon">
+                                       <img src="img/svg/404.svg" alt="">
+                                   </div>
+                                   <h2>
+                                        Ошибка.<br>
+                                        Страница не найдена
+                                   </h2>
+                                   <div class="page404__info">
+                                       <p>
+                                            К сожалению страница удалена, либо вы ошиблись адресом.
+                                            Воспользуйтесь навигацией или вернитесь на главную.
+                                       </p>
+                                       <p>
+                                            Так же доступен поиск.
+                                       </p>
+                                   </div>
+                                   <div class="search404">
+                                       <form action="#" method="post">
+                                           <input type="text" placeholder="Поиск продукции по названию">
+                                           <input type="submit">
+                                       </form>
+                                   </div>
+                               </div>
+                            </div>
+                        </div>
+						<!-- end PAGE-CONTENT -->
+					</div>
+				</div>
+			</div>
+			//= template/clients.html
+		</main>
+	</div><!-- END LAYOUT-->
+	//= template/footer.html
+
+	<!-- POPUP -->
+	<div id="call" class="popup dnone">
+		<div class="call-order">
+			<h3>Оставить заявку</h3>
+			<div class="call-order__form">
+				<form action="#" method="post">
+					<div class="call-order__wrap">
+						<div class="call-order__col">
+							<div class="input-item">
+								<div class="input-label">Ваше имя</div>
+								<div class="input-item__wrap m-positive">
+									<input type="text" value="Иван">
+								</div>
+							</div>
+							<div class="input-item">
+								<div class="input-label">Телефон*</div>
+								<div class="input-item__wrap m-negative">
+									<input type="tel" value="123456">
+								</div>
+							</div>
+							<div class="input-item">
+								<div class="input-label">Эл. почта*</div>
+								<div class="input-item__wrap">
+									<input type="email" placeholder="Эл. почта">
+								</div>
+							</div>
+						</div>
+						<div class="call-order__col">
+							<div class="input-item">
+								<div class="input-label">Прикрепить техническое задание</div>
+								<div class="input-item__wrap">
+									<div class="custom-file">
+										<input type="text" value="Файл" class="js-value">
+										<label for="custom-file-upload" class="filupp">
+											Добавить
+											<input type="file" name="attachment-file" value="1" id="custom-file-upload"/>
+										</label>
+									</div>
+									<!-- <input type="text" value="Файл"> -->
+								</div>
+							</div>
+							<div class="input-item">
+								<div class="input-label">Комментарий</div>
+								<textarea placeholder="Текст"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="checkbox-item">
+						<input type="checkbox" id="checkbox-agree1" name="checkbox" checked>
+						<label for="checkbox-agree1">
+							Я согласен с <a href="#">публичной офертой</a> и даю согласие на обработку <a href="#">персональных данных</a>
+						</label>
+					</div>
+					<div class="btn-wrap">
+						<input type="submit" value="Отправить заявку">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/libs/libs.min.js"></script>
+	<script src="js/interface.js"></script>
+	<script src="js/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+.contacts{
+    overflow: hidden;
+    .page-map{
+        margin-bottom: 110px;
+    }
+}
+.page-map{
+    height: 398px;
+    position: relative;
+}
+
+.page-map__view{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contacts-top{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 0 0 110px;
+}
+.contacts-top__title{
+    font-size: 24px;
+    //font-family: 'Russo One', sans-serif;
+    margin-bottom: 23px;
+    font-weight: 700;
+}
+.contacts-top__info{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+.contacts-top__item{
+    padding: 0 38px;
+    width: 20%;
+}
+
+.socials{
+    display: flex;
+    flex-wrap:wrap;
+}
+.socials__link{
+    width: 30px;
+    height: 30px;
+    margin: 0 30px 26px 0;
+    &.m-insta{
+        background: url(../img/svg/c-insta.svg) center no-repeat;
+    }
+    &.m-you{
+        background: url(../img/svg/c-youtube.svg) center no-repeat;
+    }
+    &.m-tg{
+        background: url(../img/svg/c-tg.svg) center no-repeat;
+    }
+    &.m-vk{
+        background: url(../img/svg/c-vk.svg) center no-repeat;
+    }
+    &.m-tiktok{
+        background: url(../img/svg/c-tiktok.png) center no-repeat;
+    }
+    &.m-linked{
+        background: url(../img/svg/c-insta.svg) center no-repeat;
+    }
+    &.m-ok{
+        background: url(../img/svg/c-ok.svg) center no-repeat;
+    }
+    &.m-fb{
+        background: url(../img/svg/c-fb.png) center no-repeat;
+    }
+}
+
+.contacts-top-phones{
+    position: relative;
+    font-weight: 400;
+    line-height: 1.45;
+    &:before{
+        content: "";
+        display: inline-block;
+        width: 20px;
+        min-width: 20px;
+        height: 20px;
+        background: url(../img/svg/phone.svg) center/cover no-repeat;
+        position: absolute;
+        left: -38px;
+        top: 2px;
+    }
+}
+.contacts-top-phones__item{
+    margin-bottom: 12px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+
+.contacts-top__address{
+    position: relative;
+    margin-bottom: 12px;
+    font-weight: 400;
+    line-height: 1.45;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    &:before{
+        content: "";
+        display: inline-block;
+        width: 18px;
+        min-width:18px;
+        height: 22px;
+        background: url(../img/svg/address.svg) center/cover no-repeat;
+        position: absolute;
+        left: -38px;
+        top: 2px;
+    }
+}
+
+
+.contacts-top-mail{
+    position: relative;
+    font-weight: 400;
+    &:before{
+        content: "";
+        display: inline-block;
+        width: 20px;
+        min-width: 20px;
+        height: 14px;
+        background: url(../img/svg/mail.svg) center/cover no-repeat;
+        position: absolute;
+        left: -38px;
+        top: 7px;
+    }
+}
+.contacts-top-mail__item{
+    margin-bottom: 14px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.contacts-section{
+    margin-bottom: 70px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.contacts-services{
+    display: flex;
+    flex-wrap:wrap;
+    margin-right: -135px;
+}
+.contacts-services__item{
+    width: 405px;
+    padding-right: 135px;
+    margin-bottom: 80px;
+    box-sizing: content-box;
+}
+.contacts-services__place{
+    margin-bottom: 7px;
+    font-size: 18px;
+}
+.contacts-services__name{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+
+// .contacts-dealer-item{
+//     margin-bottom: 80px;
+//     &:last-child{
+//         margin-bottom: 0;
+//     }
+// }
+.contacts-dealer-top{
+    color:#F2994A;
+    font-size: 24px;
+    font-family: 'Russo One', sans-serif;
+    margin-bottom: 35px;
+    &.m-center{
+        text-align: center;
+    }
+}
+
+.contacts-dealer__place{
+    margin-bottom: 13px;
+    font-size: 18px;
+}
+.contacts-dealer__name{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.contacts-services-info{
+    border-top: 1px solid #BDBDBD;
+    padding-top: 33px;
+    margin-top: 25px;
+}
+
+.contacts-services-info__item{
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 19px;
+    line-height: 1.4;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.contacts-services-info__pre{
+    width: 105px;
+    min-width: 105px;
+    font-weight: 700;
+}
+
+.contacts-services-site{
+    color: #DA6803;
+    font-weight: 400;
+}

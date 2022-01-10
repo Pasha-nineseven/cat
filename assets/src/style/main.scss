@@ -12,10 +12,22 @@
 
 
 //PAGES
+@import "pages/about";
+@import "pages/news";
+@import "pages/contacts";
 @import "pages/index";
+@import "pages/catalog";
+@import "pages/service";
+@import "pages/p404";
+@import "pages/tech";
+@import "pages/filter";
+@import "pages/product";
+
 
 //COMPONENTS
+@import "components/clients";
 @import "components/footer";
+@import "components/popup";
 @import "components/media";
 
 

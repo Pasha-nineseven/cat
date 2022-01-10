@@ -1,0 +1,39 @@
+.layout{
+    &.m-tech{
+        .page-content{
+            >.container-fluid{
+                padding: 0;
+                max-width: 100%;
+            }
+        }
+        .page-header{
+            margin-bottom: 0;
+        }
+        .page-wrapper{
+            padding-bottom: 0!important;
+        }
+    }
+}
+
+.tech{
+    
+    background: url(../img/content/tech-bg.jpg) center bottom/cover no-repeat;
+}
+
+.tech__wrap{
+    padding: 250px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tech__in{
+    max-width: 510px;
+    text-align: center;
+    h2{
+        color: #f2994a;
+        line-height: 1.1;
+        margin-bottom: 35px;
+    }
+}

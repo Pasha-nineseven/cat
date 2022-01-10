@@ -1,0 +1,195 @@
+.fancybox-is-open .fancybox-bg {
+    opacity: 1;
+}
+.fancybox-bg {
+    background: rgba(128, 128, 136, 0.3);
+    // backdrop-filter: blur(4px);
+    opacity: 0;
+}
+.fancybox-button{
+    width: 26px;
+    height: 26px;
+    background: url(../img/svg/close.svg) center/cover no-repeat;
+    outline: none;
+    padding:0;
+    svg{
+        display: none;
+    }
+}
+.fancybox-content{
+    padding:0;
+}
+
+.fancybox-close-small,
+.fancybox-slide--html .fancybox-close-small {
+    right: 40px;
+    top: 40px;
+}
+.fancybox-slide--html .fancybox-close-small{
+    right: 40px;
+    top: 40px;
+}
+
+.call-order{
+    width: 1050px;
+    padding: 90px 210px 108px;
+    h3{
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .checkbox-item {
+        margin-bottom: 42px;
+    }
+}
+
+.call-order__wrap{
+    display: flex;
+    margin: 0 -15px 23px; 
+}
+.call-order__col{
+    padding: 0 15px;
+    width: 50%;
+}
+
+.input-item{
+    margin-bottom: 21px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    
+}
+.input-label{
+    color: #4F4F4F;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.input-item__wrap{
+    position: relative;
+    &.m-positive{
+        &:after{
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 9px;
+            background: url(../img/svg/positive.svg) center/cover no-repeat;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"]{
+            font-weight: 400;
+            background: #fff;
+            font-size: 18px;
+            border: 1px solid #BDBDBD;
+            padding: 8px 40px 8px 20px;
+            height: 50px;
+        }
+        textarea{
+            font-weight: 400;
+            background: #fff;
+            font-size: 18px;
+            border: 1px solid #BDBDBD;
+        }
+    }
+    &.m-negative{
+        &:after{
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: url(../img/svg/negative.svg) center/cover no-repeat;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"]{
+            font-weight: 400;
+            background: #fff;
+            font-size: 18px;
+            border:1px solid #eb5757;
+            padding: 8px 40px 8px 20px;
+            height: 50px;
+        }
+        textarea{
+            font-weight: 400;
+            background: #fff;
+            font-size: 18px;
+            border:1px solid #eb5757;
+        }
+    }
+}
+
+
+
+.filupp > input[type="file"]{
+    position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+	
+.custom-file{
+    display: flex;
+    input[type="text"]{
+        padding-right: 18px;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+        overflow:hidden;
+    }
+}
+.filupp{
+    position: relative;
+	background: #fff;
+	display: inline-flex;
+    align-items: center;
+	padding: 7.5px 18px 8px 17px;
+	border: 1px solid #F2994A;
+    border-radius: 3px;
+	cursor: pointer;
+    color: #DA6803;
+    font-weight: 400;
+    margin-left: 20px;
+    transition:all .25s ease;
+    &:hover{
+        background: #F2994A;
+        border: 1px solid #F2994A;
+        color: #fff;
+        &:before{
+            background: url(../img/svg/download-h.svg) center/cover no-repeat;
+        }
+    }
+    &:active{
+        background: #EE780F;
+        border: 1px solid #EE780F;
+        color: #fff;
+        &:before{
+            background: url(../img/svg/download-h.svg) center/cover no-repeat;
+        }
+    }
+    &:before{
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 18px;
+        background: url(../img/svg/download.svg) center/cover no-repeat;
+        margin-right: 13px;
+        transition:all .25s ease;
+    }
+    
+}
+	

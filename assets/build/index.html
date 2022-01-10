@@ -27,48 +27,1492 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Russo+One&display=swap" rel="stylesheet">
     
     <link href="css/libs.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
 	<!--LAYOUT-->
-	<div class="layout m-aside">
+	<div class="layout m-index">
 		<header class="page-header">
-			<div class="container-fluid">
-				header
+			<div class="top">
+				<div class="container-fluid">
+					<div class="top__wrap">
+						<div class="top-pre">
+							<a href="#" class="catalog-btn js-catalog-btn">Каталог продукции</a>
+						</div>
+						<div class="top-info-wrap">
+							<div class="top-info">
+								<div class="top-search">
+									<a href="#" class="top-search__link js-top-search__link"></a>
+									<div class="top-search__form">
+										<form action="#" method="get">
+											<div class="top-search__wrap">
+												<input type="text" placeholder="Поиск по сайту" class="top-search__txt">
+												<input type="submit" class="top-search__submit">
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="top-phones">
+									<div class="top-phones-mobile">
+										<a href="#" class="top-phones-mobile__link js-top-phones-mobile__link"></a>
+										<div class="top-phones-mobile__list">
+											<a href="tel:+375296520045" class="top-phones-mobile__item">
+												+375 (29) 652-00-45<span>рб</span>
+											</a>
+											<a href="tel:+74951182866" class="top-phones-mobile__item">
+												+7 (495) 118-28-66<span>рф</span>
+											</a>
+										</div>
+									</div>
+									<a href="tel:+375296520045" class="top-phones__link">+375 (29) 652-00-45<span>рб</span></a>
+									<a href="tel:+74951182866" class="top-phones__link">+7 (495) 118-28-66<span>рф</span></a>
+								</div>
+							</div>
+							<div class="top-links">
+								<a href="#call" class="top-call js-popup-inline">Заказать звонок</a>
+								<a href="#" class="top-dealer">Наши дилеры</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+			<div class="page-catalog">
+				<div class="container-fluid">
+					<div class="menu-mobile">
+						<a href="#" class="page-catalog-close js-page-catalog-close"></a>
+						<div class="menu-mobile-list">
+							<div class="menu-mobile__top">Меню</div>
+							<div class="menu-mobile__item">
+								<a href="#" class="menu-mobile__link m-submenu js-second-toggle">
+									<span>Каталог продукции</span>
+								</a>
+								<!-- 2-level -->
+								<div class="menu-mobile-second">
+									<a href="#" class="menu-mobile__title js-back-first">Каталог продукции</a>
+									<div class="menu-mobile__item">
+										<a href="#" class="menu-mobile__link m-submenu js-third-toggle">
+											<span>По типу</span>
+										</a>
+										<!-- 3-level -->
+										<div class="menu-mobile-third">
+											<a href="#" class="menu-mobile__title js-back-second">По типу</a>
+											<div class="menu-mobile__item">
+												<a href="#" class="menu-mobile__link m-submenu js-fourth-toggle">
+													<span>Прицепы</span>
+												</a>
+												<!-- 4-level -->
+												<div class="menu-mobile-fourth">
+													<a href="#" class="menu-mobile__title js-back-third">Прицепы</a>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Самосвальные</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Низкорамные</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Ломовозы, трубовозы</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Сельскохозяйственные прицепы</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="menu-mobile__item">
+												<a href="#" class="menu-mobile__link m-submenu js-fourth-toggle">
+													<span>Полуприцепы</span>
+												</a>
+												<!-- 4-level -->
+												<div class="menu-mobile-fourth">
+													<a href="#" class="menu-mobile__title js-back-third">Полуприцепы</a>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Самосвальные</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Полуприцепы с подвижным полом</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Низкорамные</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Для скота и птицы</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Сельскохозяйственные полуприцепы</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Ломовозы</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Панелевозы</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Техника для лесного хозяйства</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Тележки, шасси, платформы</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Полуприцепы тентовые</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="menu-mobile__item">
+												<a href="#" class="menu-mobile__link">
+													<span>Бункеры и мультилифты</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="menu-mobile__item">
+										<a href="#" class="menu-mobile__link m-submenu js-third-toggle">
+											<span>По отраслям</span>
+										</a>
+										<!-- 3-level -->
+										<div class="menu-mobile-third">
+											<a href="#" class="menu-mobile__title js-back-second">По отраслям</a>
+											<div class="menu-mobile__item">
+												<a href="#" class="menu-mobile__link m-submenu js-fourth-toggle">
+													<span>Title 2</span>
+												</a>
+												<!-- 4-level -->
+												<div class="menu-mobile-fourth">
+													<a href="#" class="menu-mobile__title js-back-third">Title 2</a>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link1</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link2</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link3</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link4</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="menu-mobile__item">
+												<a href="#" class="menu-mobile__link m-submenu js-fourth-toggle">
+													<span>Title 2</span>
+												</a>
+												<!-- 4-level -->
+												<div class="menu-mobile-fourth">
+													<a href="#" class="menu-mobile__title js-back-third">Title 2</a>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link1</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link2</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link3</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menu-mobile__item">
+										<a href="#" class="menu-mobile__link m-submenu js-third-toggle">
+											<span>По назначению</span>
+										</a>
+										<!-- 3-level -->
+										<div class="menu-mobile-third">
+											<a href="#" class="menu-mobile__title js-back-second">По назначению</a>
+											<div class="menu-mobile__item">
+												<a href="#" class="menu-mobile__link m-submenu js-fourth-toggle">
+													<span>Title 2</span>
+												</a>
+												<!-- 4-level -->
+												<div class="menu-mobile-fourth">
+													<a href="#" class="menu-mobile__title js-back-third">Title 2</a>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link1</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link2</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link3</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link4</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="menu-mobile__item">
+												<a href="#" class="menu-mobile__link m-submenu js-fourth-toggle">
+													<span>Title 2</span>
+												</a>
+												<!-- 4-level -->
+												<div class="menu-mobile-fourth">
+													<a href="#" class="menu-mobile__title js-back-third">Title 2</a>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link1</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link2</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link3</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="menu-mobile__item">
+												<a href="#" class="menu-mobile__link m-submenu js-fourth-toggle">
+													<span>Title 2</span>
+												</a>
+												<!-- 4-level -->
+												<div class="menu-mobile-fourth">
+													<a href="#" class="menu-mobile__title js-back-third">Title 2</a>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link1</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link2</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link3</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="menu-mobile__item">
+												<a href="#" class="menu-mobile__link m-submenu js-fourth-toggle">
+													<span>Title 2</span>
+												</a>
+												<!-- 4-level -->
+												<div class="menu-mobile-fourth">
+													<a href="#" class="menu-mobile__title js-back-third">Title 2</a>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link1</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link2</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link3</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="menu-mobile__item">
+										<a href="#" class="menu-mobile__link m-submenu js-third-toggle">
+											<span>По категориям</span>
+										</a>
+										<!-- 3-level -->
+										<div class="menu-mobile-third">
+											<a href="#" class="menu-mobile__title js-back-second">По категориям</a>
+											<div class="menu-mobile__item">
+												<a href="#" class="menu-mobile__link m-submenu js-fourth-toggle">
+													<span>Title 2</span>
+												</a>
+												<!-- 4-level -->
+												<div class="menu-mobile-fourth">
+													<a href="#" class="menu-mobile__title js-back-third">Title 2</a>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link1</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link2</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link3</span>
+														</a>
+													</div>
+													<div class="menu-mobile__item">
+														<a href="#" class="menu-mobile__link">
+															<span>Link4</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		
+							<div class="menu-mobile__item">
+								<a href="#" class="menu-mobile__link m-submenu js-second-toggle">
+									<span>Ремонт и обслуживание</span>
+								</a>
+								<!-- 2-level -->
+								<div class="menu-mobile-second">
+									<a href="#" class="menu-mobile__title js-back-first">Ремонт и обслуживание</a>
+									<div class="menu-mobile__item">
+										<a href="#" class="menu-mobile__link">
+											<span>Новости</span>
+										</a>
+									</div>
+									<div class="menu-mobile__item">
+										<a href="#" class="menu-mobile__link">
+											<span>Информация о заводе</span>
+										</a>
+									</div>
+									<div class="menu-mobile__item">
+										<a href="#" class="menu-mobile__link">
+											<span>Политика конфиденциальности</span>
+										</a>
+									</div>
+									<div class="menu-mobile__item">
+										<a href="#" class="menu-mobile__link">
+											<span>Публичная оферта</span>
+										</a>
+									</div>
+								</div>
+							</div>
+		
+							<div class="menu-mobile__item">
+								<a href="#" class="menu-mobile__link m-submenu js-second-toggle">
+									<span>Финансирование</span>
+								</a>
+								<!-- 2-level -->
+								<div class="menu-mobile-second">
+									<a href="#" class="menu-mobile__title js-back-first">Финансирование</a>
+									<div class="menu-mobile__item">
+										<a href="#" class="menu-mobile__link">
+											<span>Новости</span>
+										</a>
+									</div>
+									<div class="menu-mobile__item">
+										<a href="#" class="menu-mobile__link">
+											<span>Информация о заводе</span>
+										</a>
+									</div>
+									<div class="menu-mobile__item">
+										<a href="#" class="menu-mobile__link">
+											<span>Политика конфиденциальности</span>
+										</a>
+									</div>
+									<div class="menu-mobile__item">
+										<a href="#" class="menu-mobile__link">
+											<span>Публичная оферта</span>
+										</a>
+									</div>
+								</div>
+							</div>
+		
+							<div class="menu-mobile__item">
+								<a href="#" class="menu-mobile__link m-submenu js-second-toggle">
+									<span>О заводе</span>
+								</a>
+								<!-- 2-level -->
+								<div class="menu-mobile-second">
+									<a href="#" class="menu-mobile__title js-back-first">О заводе</a>
+									<div class="menu-mobile__item">
+										<a href="#" class="menu-mobile__link">
+											<span>Новости</span>
+										</a>
+									</div>
+									<div class="menu-mobile__item">
+										<a href="#" class="menu-mobile__link">
+											<span>Информация о заводе</span>
+										</a>
+									</div>
+									<div class="menu-mobile__item">
+										<a href="#" class="menu-mobile__link">
+											<span>Политика конфиденциальности</span>
+										</a>
+									</div>
+									<div class="menu-mobile__item">
+										<a href="#" class="menu-mobile__link">
+											<span>Публичная оферта</span>
+										</a>
+									</div>
+								</div>
+							</div>
+		
+							
+							
+		
+							<div class="menu-mobile__item">
+								<a href="#" class="menu-mobile__link">
+									<span>Контакты</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="page-catalog__wrap">
+						<a href="#" class="page-catalog-close js-page-catalog-close"></a>
+						<div class="page-catalog-select">
+							<div class="page-catalog-item">
+								<a href="#" class="page-catalog-link m-active js-page-catalog-link" data-view="1">
+									<span>По типу</span>
+								</a>
+							</div>
+							<div class="page-catalog-item">
+								<a href="#" class="page-catalog-link js-page-catalog-link" data-view="2">
+									<span>По отраслям</span>
+								</a>
+							</div>
+							<div class="page-catalog-item">
+								<a href="#" class="page-catalog-link js-page-catalog-link" data-view="3">
+									<span>По назначению</span>
+								</a>
+							</div>
+							<div class="page-catalog-item">
+								<a href="#" class="page-catalog-link js-page-catalog-link" data-view="4">
+									<span>По категориям</span>
+								</a>
+							</div>
+						</div>
+						<div class="page-catalog-view">
+							<div class="page-catalog-view__item" id="view1">
+								<div class="page-catalog-view__list">
+									<div class="page-catalog-view__col">
+										<a href="#" class="page-catalog-view__top">
+											<span>Прицепы</span>
+										</a>
+										<a href="#" class="page-catalog-view__link"><span>Самосвальные</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Низкорамные</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Ломовозы, трубовозы</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Сельскохозяйственные прицепы</span></a>
+									</div>
+									<div class="page-catalog-view__col">
+										<a href="#" class="page-catalog-view__top">
+											<span>Полуприцепы</span>
+										</a>
+										<a href="#" class="page-catalog-view__link"><span>Самосвальные</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Полуприцепы с подвижным полом</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Низкорамные</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Для скота и птицы</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Сельскохозяйственные полуприцепы</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Ломовозы</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Панелевозы</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Техника для лесного хозяйства</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Тележки, шасси, платформы</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Полуприцепы тентовые</span></a>
+									</div>
+									<div class="page-catalog-view__col">
+										<a href="#" class="page-catalog-view__top">
+											<span>Бункеры и мультилифты</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="page-catalog-view__item dnone" id="view2">
+								<div class="page-catalog-view__list">
+									<div class="page-catalog-view__col">
+										<a href="#" class="page-catalog-view__top">
+											<span>Title 2</span>
+										</a>
+										<a href="#" class="page-catalog-view__link"><span>Link1</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link2</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link3</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link4</span></a>
+									</div>
+									<div class="page-catalog-view__col">
+										<a href="#" class="page-catalog-view__top">
+											<span>Title 2</span>
+										</a>
+										<a href="#" class="page-catalog-view__link"><span>Link1</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link2</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link3</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="page-catalog-view__item dnone" id="view3">
+								<div class="page-catalog-view__list">
+									<div class="page-catalog-view__col">
+										<a href="#" class="page-catalog-view__top">
+											<span>Title 2</span>
+										</a>
+										<a href="#" class="page-catalog-view__link"><span>Link1</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link2</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link3</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link4</span></a>
+									</div>
+									<div class="page-catalog-view__col">
+										<a href="#" class="page-catalog-view__top">
+											<span>Title 2</span>
+										</a>
+										<a href="#" class="page-catalog-view__link"><span>Link1</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link2</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link3</span></a>
+									</div>
+									<div class="page-catalog-view__col">
+										<a href="#" class="page-catalog-view__top">
+											<span>Title 2</span>
+										</a>
+										<a href="#" class="page-catalog-view__link"><span>Link1</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link2</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link3</span></a>
+									</div>
+									<div class="page-catalog-view__col">
+										<a href="#" class="page-catalog-view__top">
+											<span>Title 2</span>
+										</a>
+										<a href="#" class="page-catalog-view__link"><span>Link1</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link2</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link3</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="page-catalog-view__item dnone" id="view4">
+								<div class="page-catalog-view__list">
+									<div class="page-catalog-view__col">
+										<a href="#" class="page-catalog-view__top">
+											<span>По категориям 1</span>
+										</a>
+										<a href="#" class="page-catalog-view__link"><span>Link1</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link2</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link3</span></a>
+										<a href="#" class="page-catalog-view__link"><span>Link4</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page-header-view">
+				<div class="container-fluid">
+					<div class="top__wrap">
+						<div class="top-pre">
+							<a href="#" class="logo"></a>
+						</div>
+						<div class="top-view">
+							<div class="top-menu">
+								<div class="top-menu__item m-submenu">
+									<a href="#" class="top-menu__link">Ремонт и обслуживание</a>
+									<div class="submenu-list">
+										<a href="#" class="submenu-link">Новости</a>
+										<a href="#" class="submenu-link">Информация о заводе</a>
+										<a href="#" class="submenu-link">Политика конфиденциальности</a>
+										<a href="#" class="submenu-link">Публичная оферта</a>
+									</div>
+								</div>
+								<div class="top-menu__item m-submenu">
+									<a href="#" class="top-menu__link">Финансирование</a>
+									<div class="submenu-list">
+										<a href="#" class="submenu-link">Новости</a>
+										<a href="#" class="submenu-link">Информация о заводе</a>
+										<a href="#" class="submenu-link">Политика конфиденциальности</a>
+										<a href="#" class="submenu-link">Публичная оферта</a>
+									</div>
+								</div>
+								<div class="top-menu__item m-submenu">
+									<a href="#" class="top-menu__link">О заводе</a>
+									<div class="submenu-list">
+										<a href="#" class="submenu-link">Новости</a>
+										<a href="#" class="submenu-link">Информация о заводе</a>
+										<a href="#" class="submenu-link">Политика конфиденциальности</a>
+										<a href="#" class="submenu-link">Публичная оферта</a>
+									</div>
+								</div>
+								<div class="top-menu__item">
+									<a href="#" class="top-menu__link">Контакты</a>
+									<div class="submenu-list">
+										<a href="#" class="submenu-link">Новости</a>
+										<a href="#" class="submenu-link">Информация о заводе</a>
+										<a href="#" class="submenu-link">Политика конфиденциальности</a>
+										<a href="#" class="submenu-link">Публичная оферта</a>
+									</div>
+								</div>
+							</div>
+							<div class="top-address">
+								213826, РБ, Могилевская область,<br> 
+								г.Бобруйск, ул. К.Либкнехта, 6 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__bg"></div>
 		</header>
 		<main class="page-content workarea">
 			<div class="container-fluid">
-				<div class="breadcrumbs">
-					<a href="#" class="breadcrumbs__item">Главная</a>
-					<a href="#" class="breadcrumbs__item">О заводе</a>
-					<span class="breadcrumbs__item">Информация о заводе</span>
-				</div>
 				<div class="page-wrapper">
-					<aside class="page-aside">
-						ASIDE
-					</aside>
 					<div class="page-inner">
-						<div class="page-title">
-							<h1>О заводе</h1>
-						</div>
 						<!-- PAGE-CONTENT -->
-							PAGE-CONTENT
+						<div class="index-top"></div>
+						<div class="index-top-add">
+							<div class="container-fluid">
+								<div class="index-top__list">
+									<div class="index-top__item">
+										<div class="index-top__in">
+											<div class="index-top-title">
+												<div class="index-top-title__icon">
+													<img src="img/svg/i-t1.svg" alt="">
+												</div>
+												<div class="index-top-title__txt">Прицепы</div>
+											</div>
+											<div class="index-top-list">
+												<div class="index-top-inner">
+													<a href="#" class="index-top-link">
+														<span>Самосвальные</span>
+													</a>
+												</div>
+												<div class="index-top-inner">
+													<a href="#" class="index-top-link">
+														<span>Низкорамные</span>
+													</a>
+												</div>
+												<div class="index-top-inner">
+													<a href="#" class="index-top-link">
+														<span>Ломовозы, трубовозы</span>
+													</a>
+												</div>
+												<div class="index-top-inner">
+													<a href="#" class="index-top-link">
+														<span>Сельскохозяйственные прицепы</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="index-top__item">
+										<div class="index-top__in">
+											<div class="index-top-title">
+												<div class="index-top-title__icon">
+													<img src="img/svg/i-t2.svg" alt="">
+												</div>
+												<div class="index-top-title__txt">Полуприцепы</div>
+											</div>
+											<div class="index-top-list">
+												<div class="index-top-inner">
+													<a href="#" class="index-top-link">
+														<span>Самосвальные</span>
+													</a>
+												</div>
+												<div class="index-top-inner">
+													<a href="#" class="index-top-link">
+														<span>Ломовозы</span>
+													</a>
+												</div>
+												<div class="index-top-inner">
+													<a href="#" class="index-top-link">
+														<span>Низкорамные</span>
+													</a>
+												</div>
+												<div class="index-top-inner">
+													<a href="#" class="index-top-link">
+														<span>Панелевозы</span>
+													</a>
+												</div>
+												<div class="index-top-inner">
+													<a href="#" class="index-top-link">
+														<span>Ломовозы, трубовозы</span>
+													</a>
+												</div>
+												<div class="index-top-inner">
+													<a href="#" class="index-top-link">
+														<span>Техника для лесного хозяйства</span>
+													</a>
+												</div>
+												<div class="index-top-inner">
+													<a href="#" class="index-top-link">
+														<span>Для скота и птицы</span>
+													</a>
+												</div>
+												<div class="index-top-inner">
+													<a href="#" class="index-top-link">
+														<span>Тележки, шасси, платформы</span>
+													</a>
+												</div>
+												<div class="index-top-inner">
+													<a href="#" class="index-top-link">
+														<span>Сельскохозяйственные прицепы</span>
+													</a>
+												</div>
+												<div class="index-top-inner">
+													<a href="#" class="index-top-link">
+														<span>Полуприцепы тентовые</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="branch">
+							<div class="container-fluid">
+								<h2 class="m-center">Модели по отраслям</h2>
+								<div class="branch__list">
+									<div class="branch__item">
+										<a href="#" class="branch__in">
+											<div class="branch__icon">
+												<img src="img/svg/branch1.svg" alt="">
+											</div>
+											<div class="branch__txt">
+												Сельскому хозяйству
+											</div>
+										</a>
+									</div>
+									<div class="branch__item">
+										<a href="#" class="branch__in">
+											<div class="branch__icon">
+												<img src="img/svg/branch2.svg" alt="">
+											</div>
+											<div class="branch__txt">
+												Деревообрабатывающей и лесной промышленности
+											</div>
+										</a>
+									</div>
+									<div class="branch__item">
+										<a href="#" class="branch__in">
+											<div class="branch__icon">
+												<img src="img/svg/branch3.svg" alt="">
+											</div>
+											<div class="branch__txt">
+												Мусороперерабатывающим организациям
+											</div>
+										</a>
+									</div>
+									<div class="branch__item">
+										<a href="#" class="branch__in">
+											<div class="branch__icon">
+												<img src="img/svg/branch4.svg" alt="">
+											</div>
+											<div class="branch__txt">
+												Дорожностроительным огранизациям
+											</div>
+										</a>
+									</div>
+									<div class="branch__item">
+										<a href="#" class="branch__in">
+											<div class="branch__icon">
+												<img src="img/svg/branch5.svg" alt="">
+											</div>
+											<div class="branch__txt">
+												Транспортным организациям
+											</div>
+										</a>
+									</div>
+									<div class="branch__item">
+										<a href="#" class="branch__in">
+											<div class="branch__icon">
+												<img src="img/svg/branch6.svg" alt="">
+											</div>
+											<div class="branch__txt">
+												Пищевой промышленности
+											</div>
+										</a>
+									</div>
+									<div class="branch__item">
+										<a href="#" class="branch__in">
+											<div class="branch__icon">
+												<img src="img/svg/branch7.svg" alt="">
+											</div>
+											<div class="branch__txt">
+												Горнодобывающей промышленности
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="popular">
+							<div class="container-fluid">
+								<div class="page-head">
+									<h2>Популярные модели</h2>
+								</div>
+								<div class="popular-slider js-popular-slider">
+									<div class="popular__item">
+										<a href="#" class="popular__in">
+											<span class="popular-label">Доступно в лизинг</span>
+											<div class="popular__img">
+												<img src="img/content/popular1.png" alt="">
+											</div>
+											<div class="popular__info">
+												<div class="popular__title">
+													Полуприцеп низкорамный <span class="highlighted">САТ186</span>
+												</div>
+												<div class="popular__list">
+													<div class="popular__line">
+														<div class="popular__pre">Грузоподъемность, т</div>
+														<div class="popular__count">30</div>
+													</div>
+													<div class="popular__line">
+														<div class="popular__pre">Масса снаряжённого полуприцепа, т</div>
+														<div class="popular__count">7,5</div>
+													</div>
+													<div class="popular__line">
+														<div class="popular__pre">Длина платформы, м
+														</div>
+														<div class="popular__count">11</div>
+													</div>
+													<div class="popular__line">
+														<div class="popular__pre">Высота платформы, мм</div>
+														<div class="popular__count">900</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="popular__item">
+										<a href="#" class="popular__in">
+											<span class="popular-label">Доступно в лизинг</span>
+											<div class="popular__img">
+												<img src="img/content/popular2.png" alt="">
+											</div>
+											<div class="popular__info">
+												<div class="popular__title">
+													Полуприцеп низкорамный <span class="highlighted">САТ186</span>
+												</div>
+												<div class="popular__list">
+													<div class="popular__line">
+														<div class="popular__pre">Грузоподъемность, т</div>
+														<div class="popular__count">30</div>
+													</div>
+													<div class="popular__line">
+														<div class="popular__pre">Масса снаряжённого полуприцепа, т</div>
+														<div class="popular__count">7,5</div>
+													</div>
+													<div class="popular__line">
+														<div class="popular__pre">Длина платформы, м
+														</div>
+														<div class="popular__count">11</div>
+													</div>
+													<div class="popular__line">
+														<div class="popular__pre">Высота платформы, мм</div>
+														<div class="popular__count">900</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="popular__item">
+										<a href="#" class="popular__in">
+											<span class="popular-label">Доступно в лизинг</span>
+											<div class="popular__img">
+												<img src="img/content/popular1.png" alt="">
+											</div>
+											<div class="popular__info">
+												<div class="popular__title">
+													Полуприцеп трехосный самосвальный <span class="highlighted">САТ186</span>
+												</div>
+												<div class="popular__list">
+													<div class="popular__line">
+														<div class="popular__pre">Грузоподъемность, т</div>
+														<div class="popular__count">30</div>
+													</div>
+													<div class="popular__line">
+														<div class="popular__pre">Масса снаряжённого полуприцепа, т</div>
+														<div class="popular__count">7,5</div>
+													</div>
+													<div class="popular__line">
+														<div class="popular__pre">Длина платформы, м
+														</div>
+														<div class="popular__count">11</div>
+													</div>
+													<div class="popular__line">
+														<div class="popular__pre">Высота платформы, мм</div>
+														<div class="popular__count">900</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="popular__item">
+										<a href="#" class="popular__in">
+											<span class="popular-label">Доступно в лизинг</span>
+											<div class="popular__img">
+												<img src="img/content/popular2.png" alt="">
+											</div>
+											<div class="popular__info">
+												<div class="popular__title">
+													Полуприцеп самосвальный алюминиевый <span class="highlighted">САТ186</span>
+												</div>
+												<div class="popular__list">
+													<div class="popular__line">
+														<div class="popular__pre">Грузоподъемность, т</div>
+														<div class="popular__count">30</div>
+													</div>
+													<div class="popular__line">
+														<div class="popular__pre">Масса снаряжённого полуприцепа, т</div>
+														<div class="popular__count">7,5</div>
+													</div>
+													<div class="popular__line">
+														<div class="popular__pre">Длина платформы, м
+														</div>
+														<div class="popular__count">11</div>
+													</div>
+													<div class="popular__line">
+														<div class="popular__pre">Высота платформы, мм</div>
+														<div class="popular__count">900</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="popular__item">
+										<a href="#" class="popular__in">
+											<span class="popular-label">Доступно в лизинг</span>
+											<div class="popular__img">
+												<img src="img/content/popular1.png" alt="">
+											</div>
+											<div class="popular__info">
+												<div class="popular__title">
+													Полуприцеп низкорамный <span class="highlighted">САТ186</span>
+												</div>
+												<div class="popular__list">
+													<div class="popular__line">
+														<div class="popular__pre">Грузоподъемность, т</div>
+														<div class="popular__count">30</div>
+													</div>
+													<div class="popular__line">
+														<div class="popular__pre">Масса снаряжённого полуприцепа, т</div>
+														<div class="popular__count">7,5</div>
+													</div>
+													<div class="popular__line">
+														<div class="popular__pre">Длина платформы, м
+														</div>
+														<div class="popular__count">11</div>
+													</div>
+													<div class="popular__line">
+														<div class="popular__pre">Высота платформы, мм</div>
+														<div class="popular__count">900</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="slider-nav">
+									<div class="pagingInfo popular-slider-pagingInfo">
+										<span class="s-current"></span>
+										<span class="s-total"></span>
+									</div>
+									<span class="slide-m-prev js-popular-prev"></span>
+									<span class="slide-m-next js-popular-next"></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="main-configurator">
+							<div class="container-fluid">
+								<div class="main-configurator__view">
+									<a href="#" class="main-configurator__btn">Конфигуратор прицепа</a>
+									<div class="main-configurator__img">
+										<img src="img/content/conf-img.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="programms">
+							<div class="container-fluid">
+								<div class="page-head">
+									<h2>Программы лизинга</h2>
+								</div>
+								<div class="programms-slider js-programms-slider">
+									<div class="programms__item">
+										<a href="#" class="programms__in">
+											<div class="programms__top">
+												Беспроцентная рассрочка<br> <span class="m-green">до 6 месяцев по программе «Мост»</span>
+											</div>
+											<div class="programms__view">
+												<div class="programms-company">
+													<img src="img/content/company1.png" alt="">
+												</div>
+												<div class="programms-img">
+													<img src="img/content/pr-test.png" alt="">
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="programms__item">
+										<a href="#" class="programms__in">
+											<div class="programms__top">
+												Лизинг по программе<br> Промагролизинг 
+												Беспроцентная рассрочка <span class="m-orange">2% годовых на 7 лет</span>
+											</div>
+											<div class="programms__view">
+												<div class="programms-company">
+													<img src="img/content/company2.png" alt="">
+												</div>
+												<div class="programms-img">
+													<img src="img/content/pr-test.png" alt="">
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="programms__item">
+										<a href="#" class="programms__in">
+											<div class="programms__top">
+												Партнёрская программа<br> «Шире круг» <span class="m-blue">на 12 месяцев под 0,00001%</span>
+											</div>
+											<div class="programms__view">
+												<div class="programms-company">
+													<img src="img/content/company3.png" alt="">
+												</div>
+												<div class="programms-img">
+													<img src="img/content/pr-test.png" alt="">
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="programms__item">
+										<a href="#" class="programms__in">
+											<div class="programms__top">
+												Беспроцентная рассрочка<br> <span class="m-green">до 6 месяцев по программе «Мост»</span>
+											</div>
+											<div class="programms__view">
+												<div class="programms-company">
+													<img src="img/content/company1.png" alt="">
+												</div>
+												<div class="programms-img">
+													<img src="img/content/pr-test.png" alt="">
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="programms__item">
+										<a href="#" class="programms__in">
+											<div class="programms__top">
+												Беспроцентная рассрочка<br> <span class="m-orange">до 6 месяцев по программе «Мост»</span>
+											</div>
+											<div class="programms__view">
+												<div class="programms-company">
+													<img src="img/content/company1.png" alt="">
+												</div>
+												<div class="programms-img">
+													<img src="img/content/pr-test.png" alt="">
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="slider-nav">
+									<div class="pagingInfo programms-slider-pagingInfo">
+										<span class="s-current"></span>
+										<span class="s-total"></span>
+									</div>
+									<span class="slide-m-prev js-top-prev"></span>
+									<span class="slide-m-next js-top-next"></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="main-about">
+							<div class="container-fluid">
+								<div class="page-head">
+									<h2>О заводе</h2>
+								</div>
+								<div class="main-about__wrap">
+									<div class="main-about-benefits">
+										<div class="main-about-benefits__item">
+											<div class="main-about-benefits__count">
+												378
+											</div>
+											<div class="main-about-benefits__txt">
+												Клиентов
+											</div>
+										</div>
+										<div class="main-about-benefits__item">
+											<div class="main-about-benefits__count">
+												23
+											</div>
+											<div class="main-about-benefits__txt">
+												Сервисных центра
+											</div>
+										</div>
+										<div class="main-about-benefits__item">
+											<div class="main-about-benefits__count">
+												54
+											</div>
+											<div class="main-about-benefits__txt">
+												Модели
+											</div>
+										</div>
+										<div class="main-about-benefits__item">
+											<div class="main-about-benefits__count">
+												21
+											</div>
+											<div class="main-about-benefits__txt">
+												Дилер
+											</div>
+										</div>
+									</div>
+									<div class="main-about-view">
+										<div class="main-about-map">
+											<div id="main_map" class="page-map__view"></div>
+										</div>
+										<div class="main-about-list">
+											<div class="main-about-item">
+												<div class="main-about-item__top">
+													Мы накопили более чем полувековой опыт производства прицепной техники САТ. 
+												</div>
+												<div class="main-about-item__txt">
+													Этот опыт позволяет снова и снова предоставлять своим потребителям продукцию с хорошим сочетанием технических новинок, широкой применяемости продукции, внимания к деталям. Все это позволяет выбрать клиенту ту прицепную технику САТ, которая будет именно в его конкретных условиях выигрывать по сравнению с техникой массовых серий в сочетании производительности и экономичности в эксплуатации относительно цены покупки.
+												</div>
+											</div>
+
+											<div class="main-about-item">
+												<div class="main-about-item__top">
+													Качество производства 
+												</div>
+												<div class="main-about-item__txt">
+													<p>
+														ОАО «Спецавтотехника» уже 75 лет работает на рынке тяжёлой техники СНГ и успела заработать репутацию надёжного и профессионального партнёра. Нам важно сохранить доверие заказчиков, и мы делаем все возможное, что их ожидания оправдались.
+													</p>
+													<p>
+														Нашими многолетними партнёрами являются ведущие производители BPW, Wabco, Ermax. Со многими европейскими производителями комплектующих мы работаем напрямую, минуя посредников, что снижает итоговую стоимость нашей продукции. 
+													</p>
+												</div>
+											</div>
+
+											<div class="main-about-item">
+												<div class="main-about-item__top">
+													Прицепы и полуприцепы САТ на заказ
+												</div>
+												<div class="main-about-item__txt">
+													<p>
+														Производство моделей техники ОАО «Спецавтотехника» организовано в соответствии с национальными и международными требованиями качества.
+													</p>
+													<p>
+														Но ещё более важно для нас учесть требования и пожелания наших заказчиков. Поэтому любая модель прицепной техники, которую мы производим, может быть изменена конструкторским отделом в зависимости от задач, поставленных клиентом.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
 						<!-- end PAGE-CONTENT -->
 					</div>
 				</div>
+			</div>
+			<div class="clients">
+				<div class="container-fluid">
+			        <div class="page-head">
+			            <h2>
+			                Наши клиенты
+			            </h2>
+			        </div>
+			        <div class="clients__list">
+			            <div class="clients__item">
+			                <a href="#" class="clients__in">
+			                    <div class="clients__img">
+			                        <img src="img/content/cl1.png" alt="">
+			                    </div>
+			                </a>
+			            </div>
+			            <div class="clients__item">
+			                <a href="#" class="clients__in">
+			                    <div class="clients__img">
+			                        <img src="img/content/cl2.png" alt="">
+			                    </div>
+			                </a>
+			            </div>
+			            <div class="clients__item">
+			                <a href="#" class="clients__in">
+			                    <div class="clients__img">
+			                        <img src="img/content/cl3.png" alt="">
+			                    </div>
+			                </a>
+			            </div>
+			            <div class="clients__item">
+			                <a href="#" class="clients__in">
+			                    <div class="clients__img">
+			                        <img src="img/content/cl4.png" alt="">
+			                    </div>
+			                </a>
+			            </div>
+			            <div class="clients__item">
+			                <a href="#" class="clients__in">
+			                    <div class="clients__img">
+			                        <img src="img/content/cl5.png" alt="">
+			                    </div>
+			                </a>
+			            </div>
+			            <div class="clients__item">
+			                <a href="#" class="clients__in">
+			                    <div class="clients__img">
+			                        <img src="img/content/cl6.png" alt="">
+			                    </div>
+			                </a>
+			            </div>
+			        </div>
+			    </div>
 			</div>
 		</main>
 	</div><!-- END LAYOUT-->
 	<footer class="page-footer">
 		<div class="container-fluid">
-			footer
+			<div class="page-footer-view">
+				<div class="page-footer-menu">
+					<div class="page-footer-menu__wrap">
+						<div class="page-footer-menu__item">
+							<a href="#" class="page-footer-menu__top">
+								Товары по отраслям
+							</a>
+							<div class="page-footer-menu__list">
+								<a href="#" class="page-footer-menu__link">Сельское хозяйство</a>
+								<a href="#" class="page-footer-menu__link">
+									Деревообрабатывающая и лесная промышленность
+								</a>
+								<a href="#" class="page-footer-menu__link">Мусороперерабатывающие организации</a>
+								<a href="#" class="page-footer-menu__link">Дорожно-строительные организации
+								</a>
+								<a href="#" class="page-footer-menu__link">Транспортные организации</a>
+								<a href="#" class="page-footer-menu__link">Пищевая промышленность</a>
+								<a href="#" class="page-footer-menu__link">Горнодобывающая промышленность</a>
+							</div>
+						</div>
+						<div class="page-footer-menu__item">
+							<a href="#" class="page-footer-menu__top">
+								Каталог
+							</a>
+							<div class="page-footer-menu__list">
+								<a href="#" class="page-footer-menu__link">Прицепы</a>
+								<a href="#" class="page-footer-menu__link">Полуприцепы</a>
+								<a href="#" class="page-footer-menu__link">Бункеры и мультилифты</a>
+							</div>
+						</div>
+						<div class="page-footer-menu__item">
+							<a href="#" class="page-footer-menu__top">
+								Финансирование
+							</a>
+							<div class="page-footer-menu__list">
+								<a href="#" class="page-footer-menu__link">Лизинг в Беларуси</a>
+								<a href="#" class="page-footer-menu__link">Лизинг в России</a>
+							</div>
+						</div>
+						<div class="page-footer-menu__item">
+							<a href="#" class="page-footer-menu__top">
+								О заводе
+							</a>
+							<div class="page-footer-menu__list">
+								<a href="#" class="page-footer-menu__link">Новости
+								</a>
+								<a href="#" class="page-footer-menu__link">Информация о заводе
+								</a>
+								<a href="#" class="page-footer-menu__link">Политика конфиденциальности</a>
+								<a href="#" class="page-footer-menu__link">Публичная оферта</a>
+							</div>
+						</div>
+						<div class="page-footer-menu__item">
+							<a href="#" class="page-footer-menu__top">
+								Обслуживание
+							</a>
+							<div class="page-footer-menu__list">
+								<a href="#" class="page-footer-menu__link">Прицепов</a>
+								<a href="#" class="page-footer-menu__link">Полуприцепов</a>
+								<a href="#" class="page-footer-menu__link">Спецтехники</a>
+							</div>
+						</div>
+					</div>
+					<div class="logo-bottom">
+						<img src="img/svg/logo-bottom.svg" alt="">
+					</div>
+				</div>
+				<div class="page-footer-info">
+					<div class="page-footer-info__col">
+						<div class="page-footer-info__view">
+							<div class="page-footer-info__item">
+								<div class="page-footer-menu__top">
+									Отдел продаж
+								</div>
+								<div class="page-footer-phones">
+									<div class="page-footer-phones__item">+375 (225) 72-01-03</div>
+									<div class="page-footer-phones__item">+375 (225) 72-17-23</div>
+									<div class="page-footer-phones__item">+375 (29) 652-00-45</div>
+									<div class="page-footer-phones__item">+7 (495) 118-28-66</div>
+								</div>
+							</div>
+							<div class="page-footer-info__item">
+								<div class="page-footer-menu__top">
+									Отдел закупок
+								</div>
+								<div class="page-footer-phones">
+									<div class="page-footer-phones__item">+375 (225) 72 15 36</div>
+								</div>
+								<a href="#" class="page-footer-btn">Наши дилеры</a>
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class="page-footer-info__col">
+						<div class="page-footer-info__item">
+							<div class="page-footer-menu__top">
+								Наш адрес
+							</div>
+							<div class="page-footer-address">
+								<div class="page-footer-address__item">
+									213826, РБ, Могилевская область,
+									г.Бобруйск, ул. К.Либкнехта, 6
+								</div>
+							</div>
+							<a href="#" class="page-footer-btn">Схема проезда</a>
+						</div>
+	
+						<div class="page-footer-info__item">
+							<div class="page-footer-menu__top">
+								Время работы
+							</div>
+							<div class="page-footer-info__time">
+								Понедельник - пятница, с 8:00 до 18:00
+							</div>
+						</div>
+						<div class="page-footer-info__item">
+							<div class="socials">
+								<a href="#" class="socials__link m-insta"></a>
+								<a href="#" class="socials__link m-you"></a>
+								<a href="#" class="socials__link m-tg"></a>
+								<a href="#" class="socials__link m-vk"></a>
+								<a href="#" class="socials__link m-tiktok"></a>
+								<a href="#" class="socials__link m-linked"></a>
+								<a href="#" class="socials__link m-ok"></a>
+								<a href="#" class="socials__link m-fb"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="logo-bottom-mobile">
+					<img src="img/svg/logo-bottom.svg" alt="">
+				</div>
+			</div>
+			<div class="copyright">
+				<span>&copy;2021 ОАО «Спецавтотехника».</span> Сайт носит исключительно информационный характер и не является публичной офертой.
+			</div>
 		</div>
 	</footer>
 
+	<!-- POPUP -->
+	<div id="call" class="popup dnone">
+		<div class="call-order">
+			<h3>Оставить заявку</h3>
+			<div class="call-order__form">
+				<form action="#" method="post">
+					<div class="call-order__wrap">
+						<div class="call-order__col">
+							<div class="input-item">
+								<div class="input-label">Ваше имя</div>
+								<div class="input-item__wrap m-positive">
+									<input type="text" value="Иван">
+								</div>
+							</div>
+							<div class="input-item">
+								<div class="input-label">Телефон*</div>
+								<div class="input-item__wrap m-negative">
+									<input type="tel" value="123456">
+								</div>
+							</div>
+							<div class="input-item">
+								<div class="input-label">Эл. почта*</div>
+								<div class="input-item__wrap">
+									<input type="email" placeholder="Эл. почта">
+								</div>
+							</div>
+						</div>
+						<div class="call-order__col">
+							<div class="input-item">
+								<div class="input-label">Прикрепить техническое задание</div>
+								<div class="input-item__wrap">
+									<div class="custom-file">
+										<input type="text" value="Файл" class="js-value">
+										<label for="custom-file-upload" class="filupp">
+											Добавить
+											<input type="file" name="attachment-file" value="1" id="custom-file-upload"/>
+										</label>
+									</div>
+									<!-- <input type="text" value="Файл"> -->
+								</div>
+							</div>
+							<div class="input-item">
+								<div class="input-label">Комментарий</div>
+								<textarea placeholder="Текст"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="checkbox-item">
+						<input type="checkbox" id="checkbox-agree1" name="checkbox" checked>
+						<label for="checkbox-agree1">
+							Я согласен с <a href="#">публичной офертой</a> и даю согласие на обработку <a href="#">персональных данных</a>
+						</label>
+					</div>
+					<div class="btn-wrap">
+						<input type="submit" value="Отправить заявку">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script src="js/libs/libs.min.js"></script>
 	<script src="js/interface.js"></script>
 	<script src="js/pages.js"></script>

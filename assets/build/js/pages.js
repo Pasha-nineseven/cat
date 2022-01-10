@@ -8,7 +8,16 @@ $('body').append(
 		#pages li { margin: 5px 0; } \
 	</style> \
 	<ol id="pages"> \
+		<li><a href="about.html">About</a></li> \
+		<li><a href="news.html">News</a></li> \
+		<li><a href="contacts.html">Contacts</a></li> \
+		<li><a href="text.html">Text</a></li> \
 		<li><a href="index.html">Index</a></li> \
-		<li><a href="article.html">Article</a></li> \
+		<li><a href="catalog.html">Catalog</a></li> \
+		<li><a href="service.html">Service</a></li> \
+		<li><a href="filter.html">Filter</a></li> \
+		<li><a href="page404.html">page404</a></li> \
+		<li><a href="tech.html">tech</a></li> \
+		<li><a href="product.html">Product</a></li> \
 	</ol> \
 </div>');
