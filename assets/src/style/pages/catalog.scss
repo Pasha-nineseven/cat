@@ -223,6 +223,7 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .slider-count-slider{
+    display: flex;
     .value{
         color: #DA6803;
         font-size: 16px;
@@ -240,6 +241,14 @@ html .ui-button.ui-state-disabled:hover {
         left: 50%;
         transform: translateX(-50%);
     }
+    // input[type=text]{
+    //     height: 24px;
+    //     background: #fff;
+    //     width: 40px;
+    //     margin-top: 15px;
+    //     border-radius: 0;
+    //     text-align: center;
+    // }
 }
 .ui-widget {
     font-family: inherit;
@@ -362,7 +371,8 @@ html .ui-button.ui-state-disabled:hover {
 
 .catalog-filter-submit{
     margin-bottom: 61px;
-    input[type="submit"]{
+    input[type="submit"],
+    input[type="button"]{
         width: 100%;
         background: transparent;
         border: 2px solid #F2994A;
@@ -399,6 +409,16 @@ html .ui-button.ui-state-disabled:hover {
     input[type=checkbox]:not(:checked)+label:after{
         left: auto;
         right: 4px;
+    }
+
+    a{
+        font-size: 16px;
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        &:hover{
+            color: #da6803;
+        }
     }
 }
 

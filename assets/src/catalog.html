@@ -38,7 +38,29 @@
 										<div class="catalog-filter__wrap">
 											<div class="catalog-filter__item">
 												<div class="catalog-filter__title">Грузоподъёмность, т</div>
-												<div class="slider-count-slider js-slider-count-cargo"></div>
+												<div class="slider-count-slider js-slider-count-cargo">
+													<!-- <input
+														class="min-price"
+														type="text"
+														name="arrFilter_43_MIN"
+														id="arrFilter_43_MIN"
+														value=""
+														size="5"
+														onkeyup="smartFilter.keyup(this)"
+													/>
+										
+										
+										
+													<input
+														class="max-price"
+														type="text"
+														name="arrFilter_43_MAX"
+														id="arrFilter_43_MAX"
+														value=""
+														size="5"
+														onkeyup="smartFilter.keyup(this)"
+													/> -->
+												</div>
 											</div>
 											<div class="catalog-filter__item">
 												<div class="catalog-filter__title">Масса снаряжённого полуприцепа, т</div>
@@ -135,13 +157,15 @@
 												</div>
 											</div>
 											<div class="catalog-filter-submit">
-												<input type="submit" value="Применить">
+												<!-- <input type="submit" value="Применить"> -->
+												<input type="button" id="set_filter" name="set_filter" value="Применить">
 											</div>
 											<div class="catalog-filter-reset">
-												<input type="checkbox" id="checkboxReset1" name="checkboxReset">
+												<!-- <input type="checkbox" id="checkboxReset1" name="checkboxReset">
 												<label for="checkboxReset1">
 													Сбросить настройки фильтра
-												</label>
+												</label> -->
+												<a class="checkboxReset1" type="button" id="del_filter" name="del_filter">Сбросить настройки фильтра</a>
 											</div>
 										</div>
                                     </form>
