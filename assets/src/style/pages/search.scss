@@ -1,0 +1,94 @@
+
+.search-page{
+    .table-wrap{
+        overflow: hidden;
+        margin: 0 0 30px;
+    }
+    table{
+        min-width: 100%;
+        td{
+            padding: 0;
+        }
+    }
+    input[type=text].search-query{
+        font-size: 18px;
+    }
+    input.search-button{
+        margin-left: 20px;
+    }
+}
+
+.search-item{
+    h4 {
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+}
+.search-advanced {
+    margin: 0 0 30px;
+}
+.search-advanced-result{
+    display: flex;
+    flex-wrap:wrap;
+}
+.search-preview{
+    line-height: 1.2;
+}
+
+
+.search-advanced-filter { float: right; }
+.search-advanced-filter a { outline: none;}
+
+.search-item { margin: 0 0 1.5em; padding: 0 0 1.5em; border-bottom: 1px solid;}
+
+.search-item h4 a { text-decoration:none;}
+.search-item h4 img { border:0px;vertical-align:middle;}
+.search-item h4 span { vertical-align:middle;text-decoration:underline;}
+
+.search-item-meta { margin: 1em 0 0 0; overflow: hidden; zoom: 1;}
+.search-item-rate { float: left; margin: -3px 6px 0 0;}
+.search-item-tags { float: left; }
+.search-item-date { float: right;}
+
+.search-page input.search-suggest {
+    width: 99%; border: 1px solid; 
+    font-size:1.3em;
+}
+
+.search-filter h2 { margin:1em 0 0.5em; border: none;}
+table.search-filter { width: 100%;  margin-top: 0.5em;}
+table.search-filter td { padding: 1em; border-top: 1px solid;}
+td.search-filter-name { width: 10%; text-align: right;}
+td.search-filter-field { width: 50%;}
+
+table.search-filter input.input-field { 
+    border: 1px solid; font-size:1.3em; 
+}
+table.search-filter select.select-field {
+    border: 1px solid; font-size:1.2em; 
+}
+
+.search-sorting { margin: 0.5em 0;}
+.search-sorting b { 
+    padding: 0.2em 0.3em 0.3em ; 
+    font-weight: normal;
+}
+
+/* COLORS */
+.search-item, 
+table.search-filter td { 
+    border-color: #E9E9E9;
+}
+.search-page input.search-query, 
+.search-page input.search-suggest, 
+table.search-filter input.input-field, 
+table.search-filter select.select-field { 
+    background: #F8F7F7; 
+    border-color: #D9D9D9; 
+}
+.search-advanced, 
+.search-item-meta, 
+.search-item-meta a { color: #8a8a8a; }
+.search-sorting b { background: #e8e9ec; }
+
+.search-item-rate {font-size: 11px;}

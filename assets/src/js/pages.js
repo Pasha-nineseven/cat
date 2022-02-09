@@ -19,5 +19,6 @@ $('body').append(
 		<li><a href="page404.html">page404</a></li> \
 		<li><a href="tech.html">tech</a></li> \
 		<li><a href="product.html">Product</a></li> \
+		<li><a href="search.html">Search</a></li> \
 	</ol> \
 </div>');
