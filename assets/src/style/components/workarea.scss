@@ -129,7 +129,7 @@
 		margin-bottom: 30px;
 		padding: 0;
 		counter-reset: item;
-		font-weight: 400;
+		// font-weight: 400;
 		>li{
 			padding-left: 38px;
 			position: relative;
@@ -158,7 +158,7 @@
 		margin: 0;
 		margin-bottom: 30px;
 		padding: 0;
-		font-weight: 400;
+		// font-weight: 400;
 		li{
 			list-style-type: none;
 			padding-left: 38px;
@@ -168,7 +168,7 @@
 				content: "";
 				position: absolute;
 				left: 0;
-				top: 11px;
+				top: 12px;
 				border: 2px solid #F2994A;
 				width: 8px;
 				height: 8px;

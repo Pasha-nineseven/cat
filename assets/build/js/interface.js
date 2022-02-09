@@ -573,6 +573,11 @@ $(document).ready(function() {
 		});
 		$(this).parents('.product-about__in').find('.product-about-hidden').slideToggle(50);
 	});
+
+	//PRINT
+    $('.js-print').click(function(){
+        window.print();
+    });
 });
 
 $(window).resize(function () {
