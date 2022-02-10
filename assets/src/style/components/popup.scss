@@ -45,11 +45,19 @@
 
 .call-order__wrap{
     display: flex;
-    margin: 0 -15px 23px; 
+    margin: 0 0 23px; 
+    max-width: 540px;
+    
 }
+
+.call-order__form{
+    .afbf_submit_block {
+        text-align: left!important;
+    }
+}
+
 .call-order__col{
-    padding: 0 15px;
-    width: 50%;
+    width: 100%;
 }
 
 .input-item{
@@ -193,3 +201,16 @@
     
 }
 	
+
+
+.modal_form{
+    padding: 40px;
+    max-width: 800px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    transform: translateX(-50%);
+    .call-order {
+        width: initial;
+        padding: 0;
+    }
+}

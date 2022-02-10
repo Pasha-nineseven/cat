@@ -465,10 +465,6 @@
     .top-view {
         justify-content: flex-end;
     }
-    .call-order {
-        width: 100%;
-        padding: 60px 100px 60px;
-    }
     .news__item {
         width: 50%;
     }
@@ -994,9 +990,6 @@
 }
 
 @media screen and (max-width: 850px){
-    .call-order {
-        padding: 60px 30px 30px;
-    }
     .branch__in {
         padding: 20px;
     }
@@ -1028,9 +1021,6 @@
     .fancybox-slide--html .fancybox-close-small {
         right: 20px;
         top: 20px;
-    }
-    .call-order {
-        padding: 30px 20px 30px;
     }
     .news__item {
         padding: 0 10px;
@@ -1376,6 +1366,10 @@
     .product-about-info iframe {
         height: auto;
         min-height: 360px;
+    }
+    .modal_form {
+        margin-left: auto!important;
+        left: 50%;
     }
 }
 
