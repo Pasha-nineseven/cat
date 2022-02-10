@@ -1814,6 +1814,9 @@
     .popup ul li:before, .workarea ul li:before{
         top: 9px;
     }
+    .modal_form {
+        padding: 40px 20px!important;
+    }
 }
 
 @media screen and (max-width: 500px){
