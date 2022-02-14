@@ -3,9 +3,10 @@
     input[type=checkbox]:not(:checked)+label,
     input[type=checkbox]:checked+label,
     input[type=checkbox]:not(:checked)+label{
-        font-size: 18px;
-        line-height: 1.5;
-        padding-left: 51px;
+        font-size: 16px;
+        line-height: 1.4;
+        padding-top: 3px;
+        padding-left: 30px;
     }
 
     input[type=checkbox]:checked+label:before,
@@ -37,6 +38,12 @@
         height: 11px;
         top: 8px;
         left: 4px;
+    }
+    .btn-wrap{
+        .bx-filter-popup-result {
+            min-width: 100%;
+            margin-top: 15px;
+        }
     }
 }
 .p-filter__in{
@@ -71,14 +78,10 @@
 }
 
 .p-filter__item{
-    border-bottom: 1px solid #BDBDBD;
-    margin-bottom: 46px;
-    padding-bottom: 46px;
-    &:last-child{
-        border-bottom: 0;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    width: 16.6666%;
+    padding: 0 20px;
 }
 
 .p-filter-opt{
@@ -111,7 +114,7 @@
     padding-top: 7px;
 }
 .p-filter__title{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
     margin-bottom: 29px;
@@ -251,7 +254,9 @@
   
 
 .p-filter__wrap{
-    margin-bottom: 84px;
+    margin: 0 -20px 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .p-filter-horizontal{
