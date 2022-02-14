@@ -479,58 +479,33 @@ $(document).ready(function() {
 
 
 	//SLIDER COUNT
-	if ($( ".js-slider-count-cargo" ).length>0) {
-		$( ".js-slider-count-cargo" ).slider({
-	    	animate: true,
-	        range: true,
-	        values: [ 10, 50 ],
-	        min: 1,
-	        max: 100,
-	        step: 1,
-	        slide: function (event, ui) {
-				$('.js-slider-count-cargo .ui-slider-handle:eq(0) .price-range-min').html(ui.values[0]);
-				$('.js-slider-count-cargo .ui-slider-handle:eq(1) .price-range-max').html(ui.values[1]);
-			}
-		});
-		$('.js-slider-count-cargo .ui-slider-handle:eq(0)').append('<span class="price-range-min value">' + $('.js-slider-count-cargo').slider('values', 0) + '</span>');
-
-		$('.js-slider-count-cargo .ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + $('.js-slider-count-cargo').slider('values', 1) + '</span>');
+	if ($( ".js-slider-count" ).length>0) {
+		var sliders = $(".js-slider-count");
+		sliders.each(function() {
+			console.log($(this).attr("data-rangemax"));
+			$(this).slider({
+				animate: true,
+				range: true,
+				values: [ $(this).attr("data-valuemin"), $(this).attr("data-valuemax") ],
+				min: +$(this).attr("data-rangemin"),
+				max: +$(this).attr("data-rangemax"),
+				step: 1,
+				create: function( event, ui ) {
+					let cLeft = $(this).find('.ui-slider-handle:eq(0)');
+					let cRight = $(this).find('.ui-slider-handle:eq(1)');
+					cLeft.append("<span class='price-range-min'>" + $(this).attr("data-valuemin") + "</span>");
+					cRight.append("<span class='price-range-max'>" + $(this).attr("data-valuemax") + "</span>");
+				},
+				slide: function (event, ui) {
+					let cLeftValue = $(this).find('.price-range-min');
+					let cRightValue = $(this).find('.price-range-max');
+					cLeftValue.html(ui.values[0]);
+					cRightValue.html(ui.values[1]);
+				}
+			});
+		})
+		
 	};
-	if ($( ".js-slider-count-weight" ).length>0) {
-		$( ".js-slider-count-weight" ).slider({
-	    	animate: true,
-	        range: true,
-	        values: [ 3, 5 ],
-	        min: 1,
-	        max: 10,
-	        step: 1,
-	        slide: function (event, ui) {
-				$('.js-slider-count-weight .ui-slider-handle:eq(0) .price-range-min').html(ui.values[0]);
-				$('.js-slider-count-weight .ui-slider-handle:eq(1) .price-range-max').html(ui.values[1]);
-			}
-		});
-		$('.js-slider-count-weight .ui-slider-handle:eq(0)').append('<span class="price-range-min value">' + $('.js-slider-count-weight').slider('values', 0) + '</span>');
-
-		$('.js-slider-count-weight .ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + $('.js-slider-count-weight').slider('values', 1) + '</span>');
-	};
-	if ($( ".js-slider-count-length" ).length>0) {
-		$( ".js-slider-count-length" ).slider({
-	    	animate: true,
-	        range: true,
-	        values: [ 5, 10 ],
-	        min: 1,
-	        max: 15,
-	        step: 1,
-	        slide: function (event, ui) {
-				$('.js-slider-count-length .ui-slider-handle:eq(0) .price-range-min').html(ui.values[0]);
-				$('.js-slider-count-length .ui-slider-handle:eq(1) .price-range-max').html(ui.values[1]);
-			}
-		});
-		$('.js-slider-count-length .ui-slider-handle:eq(0)').append('<span class="price-range-min value">' + $('.js-slider-count-length').slider('values', 0) + '</span>');
-
-		$('.js-slider-count-length .ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + $('.js-slider-count-length').slider('values', 1) + '</span>');
-	};
-
 	
 
 

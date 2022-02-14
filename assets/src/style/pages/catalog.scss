@@ -510,3 +510,21 @@ html .ui-button.ui-state-disabled:hover {
 .catalog-sail__view{
     flex:1;
 }
+
+.price-range-min,
+.price-range-max{
+    color: #da6803;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    width: 40px;
+    text-align: center;
+    display: inline-block;
+    line-height: 1;
+    padding: 3px 2px;
+    position: absolute;
+    transform: translateX(-14px);
+    margin-top: 20px;
+}
