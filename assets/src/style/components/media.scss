@@ -1006,6 +1006,90 @@
     .page-footer.m-tech .f-tech-item {
         width: 33.333%!important;
     }
+
+    .catalog-filter__close{
+        display: inline-block;
+    }
+
+    .catalog__aside{
+        width: 270px;
+        width: calc(100% - 50px);
+        max-width: 310px;
+        min-width: inherit;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 21;
+        margin: 0;
+        background: #f2f2f3;
+        height: 100%;
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -o-transition: -o-transform .2s ease 0s;
+        transition: transform .2s ease 0s;
+        &.active{
+            transform: translateX(0);
+            .catalog-filter__close{
+                opacity: 1;
+                visibility: visible;
+            }
+            
+        }
+        
+        .catalog-filter__item{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .catalog-filter__title{
+            margin-bottom: 10px;
+        }
+        .ui-widget.ui-widget-content {
+            margin-top: 18px;
+            margin-bottom: 40px;
+        }
+        .catalog-filter__view{
+            &:last-child{
+                .checkbox-item{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .catalog-filter-submit{
+            width: 100%;
+        }
+    }
+    .catalog-filter-toggle{
+        display: inline-block;
+    }
+    .catalog-filter {
+        width: 100%;
+        height: 100%;
+        padding: 20px 20px 60px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .catalog-filter-result {
+        left: 50%;
+        top: calc(100% + 4px);
+        transform: translate(-50%,0);
+    }
+    .catalog-filter-result:before {
+        left: 50%;
+        top: -7px;
+        transform: translate(-50%,0) rotate(45deg);
+    }
+    .catalog-filter__overlay{
+        &.active{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }
 
 @media screen and (max-width: 850px){

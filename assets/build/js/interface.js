@@ -1,4 +1,21 @@
 $(document).ready(function() {
+	//CATALOG-FILTER
+	$('body').on('click','.catalog-filter-toggle', function(e){
+		e.preventDefault();
+		$('.catalog__aside').addClass('active');
+		$('.catalog-filter__overlay').addClass('active');
+	});
+	$('body').on('click','.catalog-filter__close', function(e){
+		e.preventDefault();
+		$('.catalog__aside').removeClass('active');
+		$('.catalog-filter__overlay').removeClass('active');
+	});
+	$('body').on('click','.catalog-filter__overlay', function(e){
+		e.preventDefault();
+		$('.catalog__aside').removeClass('active');
+		$(this).removeClass('active');
+	});
+
 	//CATALOG-BTN
 	$('body').on('click','.js-catalog-btn', function(e){
 		e.preventDefault();
