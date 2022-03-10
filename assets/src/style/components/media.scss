@@ -1818,7 +1818,7 @@
         max-width: 100%;
     }
     .p-filter__in {
-        padding: 20px 20px 55px;
+        padding: 20px 35px 55px;
     }
     .btn {
         padding: 13px 21px;
@@ -1923,6 +1923,9 @@
     }
     .p-filter__item {
         width: 100%;
+    }
+    .p-filter__title{
+        min-height: auto;
     }
 }
 

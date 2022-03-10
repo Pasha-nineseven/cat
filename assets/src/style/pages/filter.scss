@@ -47,7 +47,7 @@
     }
 }
 .p-filter__in{
-    padding: 80px 80px 98px;
+    padding: 50px 30px;
     background: #F2F2F3;
     border-bottom: 10px solid #F2994A;
 }
@@ -80,8 +80,8 @@
 .p-filter__item{
     margin-bottom: 15px;
     padding-bottom: 15px;
-    width: 16.6666%;
-    padding: 0 20px;
+    width: 20%;
+    padding: 0 30px;
 }
 
 .p-filter-opt{
@@ -118,6 +118,7 @@
     line-height: 1.2;
     font-weight: 400;
     margin-bottom: 29px;
+    min-height: 43px;
 }
 
 
@@ -254,7 +255,7 @@
   
 
 .p-filter__wrap{
-    margin: 0 -20px 30px;
+    margin: 0 -30px 30px;
     display: flex;
     flex-wrap: wrap;
 }
