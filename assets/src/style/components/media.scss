@@ -1927,6 +1927,11 @@
     .p-filter__title{
         min-height: auto;
     }
+    .bx-filter-parameters-box-container{
+        .catalog-filter__title{
+            min-height: auto;
+        }
+    }
 }
 
 @media screen and (max-width: 500px){
