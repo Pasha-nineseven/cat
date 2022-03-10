@@ -500,6 +500,9 @@ $(document).ready(function() {
 		var sliders = $(".js-slider-count");
 		sliders.each(function() {
 			console.log($(this).attr("data-rangemax"));
+			var minInput = BX($(this).attr("data-input-min"));
+			var maxInput = BX($(this).attr("data-input-max"));
+
 			$(this).slider({
 				animate: true,
 				range: true,
@@ -516,8 +519,15 @@ $(document).ready(function() {
 				slide: function (event, ui) {
 					let cLeftValue = $(this).find('.price-range-min');
 					let cRightValue = $(this).find('.price-range-max');
+					
+					minInput.value = ui.values[0];
+					maxInput.value = ui.values[1];
+
 					cLeftValue.html(ui.values[0]);
 					cRightValue.html(ui.values[1]);
+					
+					smartFilter.keyup(minInput);
+					smartFilter.keyup(maxInput);
 				}
 			});
 		})
