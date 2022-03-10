@@ -372,3 +372,38 @@ a.breadcrumbs__item{
 		line-height: 1.1;
 	}
 }
+
+.more-checkbox-toggle{
+	position: relative;
+	padding-right: 20px;
+	color: #da6803;
+	display: inline-flex;
+	
+	&:after {
+		content: "";
+		display: inline-block;
+		width: 17px;
+		height: 6px;
+		background: url(../img/svg/arr-next.svg) center/cover no-repeat;
+		transition: all .25s ease;
+		position: absolute;
+		right: 0;
+		top: 13px;
+		transform: rotate(90deg);
+	}
+	&.active{
+		margin-top: 10px;
+		&:after{
+			transform: rotate(-90deg);
+		}
+	}
+}
+
+
+.p-filter__item{
+	.checkbox-item{
+		&.m-hidden{
+			display: none;
+		}
+	}
+}

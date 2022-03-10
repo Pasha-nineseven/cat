@@ -1932,6 +1932,9 @@
             min-height: auto;
         }
     }
+    .more-checkbox-toggle:after{
+        top: 11px;
+    }
 }
 
 @media screen and (max-width: 500px){

@@ -499,9 +499,9 @@ $(document).ready(function() {
 	if ($( ".js-slider-count" ).length>0) {
 		var sliders = $(".js-slider-count");
 		sliders.each(function() {
-			console.log($(this).attr("data-rangemax"));
-			var minInput = BX($(this).attr("data-input-min"));
-			var maxInput = BX($(this).attr("data-input-max"));
+			// console.log($(this).attr("data-rangemax"));
+			// var minInput = BX($(this).attr("data-input-min"));
+			// var maxInput = BX($(this).attr("data-input-max"));
 
 			$(this).slider({
 				animate: true,
@@ -532,6 +532,29 @@ $(document).ready(function() {
 			});
 		})
 		
+
+		if($('.p-filter__wrap').length>0){
+			$('.p-filter__item').each(function(index, value) {
+				let innerCheck = $(this).find('.checkbox-item');
+				
+				if(innerCheck.length>6){
+					max = 6;
+					i = 0;
+					innerCheck.each(function() {
+						i += 1;
+						if(i > max) {
+							$(this).addClass("m-hidden");
+						}
+					})
+					$(this).append("<a href='#' class='more-checkbox-toggle'>Еще</a>")
+				}
+			});
+			$('body').on('click','.more-checkbox-toggle', function(e){
+				e.preventDefault();
+				$(this).parents('.p-filter__item').find('.m-hidden').slideToggle(100);
+				$(this).toggleClass('active');
+			});
+		}
 	};
 	
 
