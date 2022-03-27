@@ -357,10 +357,13 @@ a.breadcrumbs__item{
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		height: auto;
 		img{
 			width: auto;
 			height: auto;
 			max-width: 100%;
+			min-height: 55px;
+			object-fit: none;
 		}
 	}
 }
