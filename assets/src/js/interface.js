@@ -500,8 +500,8 @@ $(document).ready(function() {
 		var sliders = $(".js-slider-count");
 		sliders.each(function() {
 			// console.log($(this).attr("data-rangemax"));
-			// var minInput = BX($(this).attr("data-input-min"));
-			// var maxInput = BX($(this).attr("data-input-max"));
+			var minInput = BX($(this).attr("data-input-min"));
+			var maxInput = BX($(this).attr("data-input-max"));
 
 			$(this).slider({
 				animate: true,
