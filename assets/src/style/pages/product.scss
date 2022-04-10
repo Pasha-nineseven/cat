@@ -11,7 +11,7 @@
     display: flex;
     width: 100%;
     overflow: hidden;
-    padding-top: 30px;
+    justify-content: flex-end;
 }
 
 
@@ -25,6 +25,9 @@
     min-width: 375px;
     margin-left: 30px;
     text-align: right;
+    h3{
+        margin-top: 0;
+    }
 }
 
 
@@ -472,11 +475,11 @@
 
 
 
-.product-more{
-    .benefits{
-        margin-bottom: 125px;
-    }
-}
+// .product-more{
+//     .benefits{
+//         margin-bottom: 125px;
+//     }
+// }
 
 .product-add{
     padding-top: 82px;
@@ -536,6 +539,9 @@
 }
 .product-partners{
     margin-bottom: 70px;
+    h2{
+        margin-top: 0;
+    }
 }
 
 .product-partners__list{

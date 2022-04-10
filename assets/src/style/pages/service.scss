@@ -19,16 +19,18 @@
         }
         .index-top-title__txt{
             line-height: 1;
+            font-size: 34px;
         }
         .index-top__item:first-child {
-            width: 41%;
+            width: 50%;
         }
         .index-top__item:last-child {
-            width: 59%;
+            width: 50%;
         }
         .index-top-title {
-            padding: 71px 50px 50px 97px;
+            // padding: 71px 50px 50px 97px;
             height: auto;
+            min-height: 203px;
         }
         .index-top-list{
             padding-left: 97px;

@@ -20,7 +20,7 @@
 }
 .catalog-filter{
     background: #F2F2F3;
-    padding: 47px 49px 47px 50px;
+    padding: 47px 49px 0 50px;
     margin-bottom: 30px;
 
     input[type=checkbox]:checked+label,
@@ -362,11 +362,14 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .catalog-filter-submit{
-    margin-bottom: 61px;
+    margin-bottom: 40px;
+    position: sticky;
+    bottom: 20px;
+    z-index: 9;
     input[type="submit"],
     input[type="button"]{
         width: 100%;
-        background: transparent;
+        background: #f2f2f3;
         border: 2px solid #F2994A;
         border-radius: 3px;
         color: #DA6803;
@@ -486,6 +489,9 @@ html .ui-button.ui-state-disabled:hover {
 .catalog-sail__wrap{
     display: flex;
     padding-top: 26px;
+    h4{
+        margin-top: 0;
+    }
 }
 
 .catalog-sail__img{
@@ -521,20 +527,22 @@ html .ui-button.ui-state-disabled:hover {
     margin-top: 20px;
 }
 
-
+.catalog-filter__wrap{
+    position: relative;
+}
 
 .catalog-filter__view{
     position: relative;
 }
 .catalog-filter-result{
-    position: absolute;
-    left: calc(100% + 15px);
-    top: 50%;
-    transform: translateY(-50%);
+    position: sticky;
+    // left: calc(100% + 15px);
+    bottom: 50%;
+    transform: translate(100%,50%);
     line-height: 1.1;
     background: #fff;
-    min-width: 170px;
-    z-index:12;
+    /* min-width: 170px; */
+    z-index: 12;
     text-align: center;
     padding: 15px;
     border: 1px solid #f2994a;
