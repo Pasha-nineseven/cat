@@ -956,7 +956,7 @@
         justify-content: center;
     }
     .catalog-top{
-        margin-bottom: 40px;
+        margin: -10px 0 30px;
     }
     .catalog {
         margin-bottom: 80px;
@@ -1968,6 +1968,11 @@
     }
     .more-checkbox-toggle:after{
         top: 11px;
+    }
+    .catalog-top-labels__item {
+        margin: 0 5px 5px 0;
+        padding: 2px 10px;
+        font-size: 14px;
     }
 }
 

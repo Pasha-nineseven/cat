@@ -30,6 +30,10 @@
         font-size: 18px;
         line-height: 1.5;
         padding-left: 40px;
+        &.bx-filter-param-label.disabled{
+            opacity: 0.7;
+            color: #b2b2b2;
+        }
     }
 
     input[type=checkbox]:checked+label:before,
@@ -365,7 +369,7 @@ html .ui-button.ui-state-disabled:hover {
     margin-bottom: 40px;
     position: sticky;
     bottom: 20px;
-    z-index: 9;
+    z-index: 11;
     input[type="submit"],
     input[type="button"]{
         width: 100%;
@@ -423,7 +427,7 @@ html .ui-button.ui-state-disabled:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 70px;
+    margin: -35px 0 40px;
 }
 
 .catalog-top-labels{
