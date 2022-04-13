@@ -393,6 +393,14 @@
     text-align: right;
     font-size: 18px;
     line-height: 1;
+    input[type=email],
+    input[type=password],
+    input[type=tel],
+    input[type=text]{
+        max-width: 134px;
+        padding: 3px 10px;
+        height: 30px;
+    }
 }
 
 .product-info__list{
