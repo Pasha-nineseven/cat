@@ -92,3 +92,29 @@ table.search-filter select.select-field {
 .search-sorting b { background: #e8e9ec; }
 
 .search-item-rate {font-size: 11px;}
+
+
+
+.search-item{
+    display: flex;
+    &__image{
+        width: 200px;
+        width: 200px;
+        min-width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-right: 30px;
+        img{
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    &__descr{
+        h4{
+            margin-top:0;
+        }
+    }
+}

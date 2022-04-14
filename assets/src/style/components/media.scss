@@ -1974,6 +1974,17 @@
         padding: 2px 10px;
         font-size: 14px;
     }
+    .search-item{
+        flex-wrap:wrap;
+    }
+    .search-item__image {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 500px){

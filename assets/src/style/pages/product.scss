@@ -425,15 +425,22 @@
     }
     .jq-selectbox {
         width: auto;
+        max-width: 100%;
+        min-width: 134px;
     }
     .jq-selectbox__dropdown {
         margin-top: 5px;
         padding: 23px 28px 22px 18px;
         text-align: left;
+        max-width: 100%;
+        
     }
     .jq-selectbox__dropdown ul{
         max-height: inherit!important;
         overflow: visible;
+    }
+    .jq-selectbox li{
+        white-space: normal;
     }
 }
 
