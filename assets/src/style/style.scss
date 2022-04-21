@@ -410,3 +410,14 @@ a.breadcrumbs__item{
 		}
 	}
 }
+
+
+input[type=checkbox]:checked+label,
+input[type=checkbox]:not(:checked)+label,
+input[type=checkbox]:checked+label,
+input[type=checkbox]:not(:checked)+label{
+	&.bx-filter-param-label.disabled{
+		opacity: 0.7;
+		color: #b2b2b2;
+	}
+}
