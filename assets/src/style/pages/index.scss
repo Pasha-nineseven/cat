@@ -14,7 +14,18 @@
 
 .index-top{
 	height: 410px;
-    background: url(../img/content/page-top-bg.jpg) center/cover no-repeat;
+    // background: url(../img/content/page-top-bg.jpg) center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.index-top-mobile{
+    display: none;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .index-top-add{
